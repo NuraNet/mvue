@@ -1,15 +1,13 @@
 <template>
-  <div class="container">
-Hi 🖐! <br>
-<p>My name's Arun George and I created NuraNet as a research and development project.<br><br>
-The only justification for its existence is to help accelerate the future through training, research, and development.
-</p>
-My current research interests include:
-
-<li v-for="i in interests" :key="i">
-{{i}}
-</li>
-
+<div class="container">
+  <p>Hi 🖐! My name's Arun and welcome to NuraNet!</p>
+  <p>The only justification for its existence is to help accelerate the future through training, research, and development.</p>
+  My current research interests include:
+  <ul>
+      <li v-for="item in interests" :key="item">
+    {{item}}
+  </li>
+  </ul>
 </div>
 </template>
 
