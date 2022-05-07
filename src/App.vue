@@ -1,53 +1,20 @@
 <template>
-  <h1>NuraNet.AI</h1>
-  <h2>Accelerate the future.</h2>
- <div class="container">
-    <AboutBlock />
-  
- </div>
-
-   <div v-if="showBlock">
-        <ContactBlock title="Contact Arun"  @close="toggleModal"/>
+  <div>
+ <h1>NuraNet.ai</h1>
+<p>Accelerate the future.</p>
   </div>
-
-<button class="button" @click="toggleModal">Contact</button>
+  <div class="nav"><router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link></div>
+  
+  <router-view/>
 
 </template>
 
-<script>
-
-import AboutBlock from './components/AboutBlock.vue'
-import ContactBlock from './components/ModalBlock.vue'
-
-
-
-export default {
-  name: 'App',
-  components: {
-    AboutBlock,
-    ContactBlock
-},
-
-    data() {
-      return {
-      showBlock: false
-        }
-      },
-
-      methods: {
-        toggleModal() {
-          this.showBlock = !this.showBlock
-        }
-      }
-}
-</script>
-
 <style>
-
 @import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@200&family=Cairo:wght@200&family=Goldman&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
 
-h1,p,h2,body { 
+h1,h2{ 
   font-family: 'Goldman', cursive;
   text-align: center;
   color: black;
@@ -56,6 +23,15 @@ h1,p,h2,body {
 
 }
 
+.nav {
+  text-align: center;
+}
+
+body {
+  font-family: 'Baloo 2', cursive;
+   font-size:1.2rem;
+   text-align: center;
+}
 
 
 
@@ -97,6 +73,7 @@ h1,p,h2,body {
     .button:hover {
       background: gray;
     }
+
 
 
 
