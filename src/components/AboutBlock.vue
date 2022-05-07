@@ -1,5 +1,5 @@
 <template>
-Hi. My name's Arun George and I created <i>NuraNet</i> as a research and development project. <br><br>
+Hi 🤚!<br> My name's Arun George and I created <u>NuraNet</u> as a research and development project. <br><br>
 The only justification for its existence is to help accelerate the future through technology. <p></p>
 My current research interests include:
 <ul>

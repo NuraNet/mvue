@@ -5,16 +5,22 @@
   <AboutBlock />
  </div>
 
+  <button class="button">Contact</button>
 
 </template>
 
 <script>
 
 import AboutBlock from './components/AboutBlock.vue'
+// import ContactBlock from './components/ContactBlock.vue'
+
 
 export default {
   name: 'App',
-  components: {AboutBlock}
+  components: {
+    AboutBlock,
+   // ContactBlock
+    }
 }
 </script>
 
@@ -23,9 +29,13 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@200&family=Cairo:wght@200&family=Goldman&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
 
-h1,p,h2 { 
+h1,p,h2,body { 
   font-family: 'Goldman', cursive;
   text-align: center;
+}
+
+.inline-txt {
+  font-family: 'Baloo 2', cursive;
 }
 
 
