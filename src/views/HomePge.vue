@@ -1,9 +1,9 @@
 <template>
   <div class="container">
 Hi 🖐! <br>
-My name's Arun George and I created NuraNet as a research and development project.
+<p>My name's Arun George and I created NuraNet as a research and development project.<br><br>
 The only justification for its existence is to help accelerate the future through training, research, and development.
-<br><br>
+</p>
 My current research interests include:
 
 <li v-for="i in interests" :key="i">
@@ -18,9 +18,9 @@ My current research interests include:
 //import {reactive} from 'vue'
 
 const interests = [
-  "CAI",
-  "BCI",
-  "NLU",
+  "Conversational AI",
+  "Brain Computer Interface",
+  "Natural Language Processing",
   ]
 
 
