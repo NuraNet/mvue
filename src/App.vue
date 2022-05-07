@@ -2,25 +2,43 @@
   <h1>NuraNet</h1>
   <h2>Accelerate the future.</h2>
  <div class="container">
-  <AboutBlock />
+    <AboutBlock />
+  
  </div>
 
-  <button class="button">Contact</button>
+   <div v-if="showBlock">
+        <ContactBlock title="Contact Arun"  @close="toggleModal"/>
+  </div>
+
+<button class="button" @click="toggleModal">Contact</button>
 
 </template>
 
 <script>
 
 import AboutBlock from './components/AboutBlock.vue'
-// import ContactBlock from './components/ContactBlock.vue'
+import ContactBlock from './components/ModalBlock.vue'
+
 
 
 export default {
   name: 'App',
   components: {
     AboutBlock,
-   // ContactBlock
-    }
+    ContactBlock
+},
+
+    data() {
+      return {
+      showBlock: false
+        }
+      },
+
+      methods: {
+        toggleModal() {
+          this.showBlock = !this.showBlock
+        }
+      }
 }
 </script>
 
@@ -34,9 +52,6 @@ h1,p,h2,body {
   text-align: center;
 }
 
-.inline-txt {
-  font-family: 'Baloo 2', cursive;
-}
 
 
 
@@ -71,6 +86,8 @@ h1,p,h2,body {
 
 
  }
+
+
 
 
 </style>

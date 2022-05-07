@@ -1,7 +1,7 @@
 <template>
-Hi 🤚!<br> My name's Arun George and I created <u>NuraNet</u> as a research and development project. <br><br>
+Hi 🖐!<br> My name's Arun George and I created <u>NuraNet</u> as a research and development project. <br><br>
 The only justification for its existence is to help accelerate the future through training, research, and development.
- <p></p>
+<br><br>
 My current research interests include:
 <ul>
   <li v-for="item in interests" :key="item">{{item}}</li>
