@@ -1,5 +1,5 @@
 <template>
-  <h1>NuraNet</h1>
+  <h1>NuraNet.AI</h1>
   <h2>Accelerate the future.</h2>
  <div class="container">
     <AboutBlock />
@@ -50,6 +50,8 @@ export default {
 h1,p,h2,body { 
   font-family: 'Goldman', cursive;
   text-align: center;
+  color: black;
+
 }
 
 
