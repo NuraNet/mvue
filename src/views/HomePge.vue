@@ -2,7 +2,7 @@
 <div class="container">
   <p>Hi 🖐! My name's Arun and welcome to NuraNet!</p>
   <p>The only justification for its existence is to help accelerate the future through training, research, and development.</p>
-  My current research interests include:
+  My research interests include:
   <ul>
       <li v-for="item in interests" :key="item">
     {{item}}
