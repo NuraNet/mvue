@@ -27,9 +27,14 @@ h1,h2{
   padding: 10px;
 }
 
+a:link,a:visited {
+ color: blue;
+ text-decoration: none;
+}
+
 #nav a {
  color: blue;
- text-decoration: underline;
+ text-decoration: none;
  padding: 10px;
  border-radius: 4px;
  
