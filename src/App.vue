@@ -6,7 +6,7 @@
 
   
   <router-view/>
-  <div class="nav"><router-link to="/">Home</router-link> |
+  <div id="nav"><router-link to="/">Home</router-link>
     <router-link to="/about">About</router-link></div>
 </template>
 
@@ -23,10 +23,28 @@ h1,h2{
 
 }
 
-.nav {
-  text-align: center;
-  text-decoration: none;
+#nav {
+  padding: 10px;
 }
+
+#nav a {
+ color: blue;
+ text-decoration: underline;
+ padding: 10px;
+ border-radius: 4px;
+ 
+}
+
+
+#nav a.router-link-exact-active {
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+
 
 body {
   font-family: 'Baloo 2', cursive;
@@ -73,12 +91,6 @@ body {
       background: gray;
   }
   
-  a:link,a:visited,a:active {
-  text-decoration: none;
-  color: blue;
-  }
-  a:hover {
-  text-decoration: underline;
-  }
+ 
 
 </style>
