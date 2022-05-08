@@ -25,6 +25,7 @@ h1,h2{
 
 .nav {
   text-align: center;
+  text-decoration: none;
 }
 
 body {
@@ -68,13 +69,16 @@ body {
     transition: background 500ms ease;
 
  }
-
-
-    .button:hover {
+ .button:hover {
       background: gray;
-    }
-
-
-
+  }
+  
+  a:link,a:visited,a:active {
+  text-decoration: none;
+  color: blue;
+  }
+  a:hover {
+  text-decoration: underline;
+  }
 
 </style>
