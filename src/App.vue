@@ -1,6 +1,6 @@
 <template>
   <div>
- <h1>NuraNet.ai</h1>
+ <h1 class="logo">NuraNet.ai</h1>
 <p>Accelerate the future.</p>
   </div>
 
@@ -23,6 +23,19 @@ h1,h2{
 
 }
 
+.logo {
+ 
+  width:20rem;
+  text-align: center;
+  border-color: #000;
+  color: black;
+  border: 1px solid black;
+  margin: auto;
+  border-radius: 10px;
+  
+
+}
+
 #nav {
   padding: 10px;
 }
@@ -37,6 +50,7 @@ a:link,a:visited {
  text-decoration: none;
  padding: 10px;
  border-radius: 4px;
+ margin: 100px auto;
  
 }
 
@@ -53,8 +67,8 @@ a:link,a:visited {
 
 body {
   font-family: 'Baloo 2', cursive;
-   font-size:1.2rem;
-   text-align: center;
+  font-size:1.2rem;
+  text-align: center;
 }
 
 
