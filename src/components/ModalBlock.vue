@@ -1,16 +1,9 @@
 <template>
-
     <div class="backdrop" @click="closeBlock">
          <div class="modal">
          <h1> {{title}}</h1>
-         
          </div> 
-         
-        
-  
     </div>
-      
-
 </template>
 
 
@@ -24,22 +17,16 @@
          }
         }
     }
-
 </script>
 
 <style scoped>
-
 .modal {
-    border-radius: 10px;
-    background: white;
-    padding: 9px;
+   border-radius: 10px;
+   background: white;
+   padding: 9px;
    
-
-    max-width: 500px;
+   max-width: 500px;
    margin: 100px auto;
-
-
-  
 }
 
 .backdrop {
@@ -48,9 +35,6 @@
     background: rgba(0,0,0,0.5);
     width: 100%;
     height: 100%;
-   
-
-
 }
 </style>
 
