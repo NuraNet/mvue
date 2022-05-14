@@ -18,7 +18,7 @@
 const interests = [
   "Conversational AI",
   "Brain Computer Interface",
-  "Natural Language Processing",
+  "Blockhain Technology",
   ]
 
 
