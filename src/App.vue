@@ -3,13 +3,11 @@
  <h1 class="logo">NuraNet.ai</h1>
 <p>Accelerate the future.</p>
   </div>
-
-  
-  <router-view/>
-  <div id="nav"><router-link to="/">Home</router-link>
+    <div id="nav"><router-link to="/">Home</router-link>
     <router-link to="/about">About</router-link></div>
+    <br>
+  <router-view/>
 </template>
-
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@200&family=Cairo:wght@200&family=Goldman&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
@@ -75,7 +73,7 @@ body {
 
  .container {
    max-width: 700px;
-   margin: 100px auto;
+   margin: auto;
    overflow: auto;
    
    border: 1px solid steelblue;
